@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Habit Input</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        input, textarea, button {
+            margin-top: 10px;
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        button {
+            background-color: #007bff;
+            color: #ffffff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="userInputForm"class="container">
+        <h2>Dog's Habit Input</h2>
+        <label for="diet">Diet:</label>
+        <input type="text" id="diet" placeholder="E.g., Dry kibble, raw diet, etc." value=""><br>
+
+        <label for="sleep">Sleep Schedule:</label>
+        <input type="text" id="sleep" placeholder="E.g., Sleeps 8 hours a night" value=""><br>
+
+        <label for="behavior">Behavioral Patterns:</label>
+        <input type="text" id="behavior" placeholder="E.g., Active during the day, anxious around strangers" value=""></textarea><br>
+
+        <button id="submitDogInfoButton" onclick="navigateToAdviceScreen(); saveInputValues()">Submit</button>
+    </div>   
+</body>
+<script src="renderer.js"></script>
+</html>
